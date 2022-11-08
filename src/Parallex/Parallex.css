@@ -55,10 +55,10 @@
     background: #fff;
 }
 .contact-section {
-    height: 100%;
-    margin-left: 500px; 
+    
+    
     text-align: center;
-    background: #eee;
+    background:  #fff;
 }
 
    
@@ -98,7 +98,7 @@
 
     height: 100%;
 
-    background: #2c73df;
+    background: #ffffff;
 
 }
 
@@ -164,7 +164,7 @@
 
     align-items: center;
 
-    padding: 20px;
+    padding: 15px;
 
     box-sizing: border-box;
 
@@ -203,7 +203,7 @@
 
     left: 50%;
 
-    left: 50%;
+    
 
     transform: translateX(-50%);
 
@@ -249,7 +249,7 @@
 .btn{
   border: 1px solid #000000;
   background: none;
-  padding: 10px 20px;
+  padding: 10px 10px;
   font-size: 14px;
   cursor: pointer;
   margin: 10px;
@@ -265,7 +265,7 @@
   color: #fff;
 }
 .btn1:hover,.btn2:hover{
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 .btn3:hover,.btn4:hover{
   color: #3498db;
@@ -275,8 +275,8 @@
   position: absolute;
   left: 0;
   width: 100%;
-  height: 0%;
-  background: #000000;
+  height: 20%;
+  background: #BDE1C4;
   z-index: -1;
   transition: 0.8s;
 }
@@ -286,13 +286,13 @@
 }
 .btn2::before,.btn4::before{
   bottom: 0;
-  border-radius: 50% 50% 0 0;
+  border-radius: 30% 30% 0% 0%;
 }
 .btn3::before,.btn4::before{
   height: 180%;
 }
 .btn1:hover::before,.btn2:hover::before{
-  height: 180%;
+  height: 100%;
 }
 .btn3:hover::before,.btn4:hover::before{
   height: 0%;
@@ -309,7 +309,7 @@
   .cards{
     cursor: pointer;
     width: 220px;
-    height: 200px;
+    height: 130px;
     
   }
   .front,.back{
@@ -362,3 +362,117 @@
   .cards:hover > .back{
     transform: perspective(600px) rotateY(0deg);
   }
+
+
+  h1 {
+    color: #fff;
+    
+    text-rendering: optimizelegibility;
+    font-weight: normal;
+    font-family: "Candara";
+    font-size: 80px;
+    position: relative;
+    
+}
+
+.r {
+  color: #BDE1C4;
+  
+  text-rendering: optimizelegibility;
+  font-weight: normal;
+  font-family: "Candara";
+  font-size: 80px;
+  line-height: 8.7rem;
+  position: relative;
+ 
+}
+
+.text-as-shadow {
+  position: absolute;
+  opacity: .03;
+  left: 250px;
+  line-height: 1!important;
+  font-weight: 700!important;
+  top: 0;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.bn{
+  border: 1px solid #000000;
+  background: none;
+  padding: 10px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+  
+}
+.bn1,.bn2{
+  color: #000000;
+}
+.bn3,.bn4{
+  color: #fff;
+}
+.bn1:hover,.bn2:hover{
+  color: rgb(255, 255, 255);
+}
+.bn3:hover,.bn4:hover{
+  color: #3498db;
+}
+.bn::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background: #ffffff;
+  z-index: -1;
+  transition: 0.8s;
+}
+.bn1::before,.bn3::before{
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+.bn2::before,.bn4::before{
+  bottom: 0;
+  border-radius: 30% 30% 0% 0%;
+}
+.bn3::before,.bn4::before{
+  height: 180%;
+}
+.bn1:hover::before,.bn2:hover::before{
+  height: 100%;
+}
+.bn3:hover::before,.bn4:hover::before{
+  height: 0%;
+}
+
+.tags {
+  border-radius: 10px;
+  background: #848682;
+  padding: 2px;
+  width: 50px;
+  height: 20px;
+  font-size: 12px;
+  margin-left: 10px;
+  color: #fff;
+}
+
+.tags_sql {
+  border-radius: 10px;
+  background: #848682;
+  padding: 2px;
+  width: 60px;
+  height: 20px;
+  font-size: 12px;
+  margin-left: 10px;
+  color: #fff;
+}
+
+

@@ -14,13 +14,28 @@ import css from './logo/css.png'
 import js from './logo/js.png'
 import manworking from './logo/man_working.png'
 import sql from './logo/sql.png'
-import dotnet from './logo/asp.net.png'
+import dotnet from './logo/dotnet.png'
 import c from './logo/c#.jpg'
 import java from './logo/java.png'
+import react from './logo/react.png'
 import mail from './logo/mail.jpg'
 import linkedin from './logo/linkedin.jpg'
 import twitter from './logo/twitter.jpg'
 import instagram from './logo/instagram.jpg'
+import right from './logo/right.png'
+import left from './logo/left.png'
+import icon  from './logo/icon.png'
+import icon2 from './logo/icon2.png'
+import icon3 from './logo/icon3.png'
+import man_about from './logo/man_about.gif'
+import man_workings from './logo/man_workings.png'
+import man2 from './logo/man2.png'
+import contact_links from './logo/open_link.png'
+import man_contact from './logo/man_workings.png'
+import TypeWriterEffect from 'react-typewriter-effect';
+import download from './logo/download.png'
+
+
 import $ from 'jquery';
 import {
   Nav,
@@ -71,35 +86,39 @@ const inlineStyle1 = {
   const element_two = {
     
     marginTop: '300px',
-    marginLeft: '400px',
-    fontSize :'100px',
+    marginLeft: '100px',
+    fontSize :'70px',
     size:'100px',  
+    fontWeight: 'bold'
   }
 
   const element_three = {
     
     marginTop: '0px',
-    marginLeft: '720px',
+    marginLeft: '820px',
     fontSize :'15px',
     textColor:'white',
+    fontFamily: '"proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif'
   }
 
   const element_four = {
     
     marginTop: '50px',
     marginLeft: '720px'
+    
   }
 
   const element_five = {
     
     marginTop: '-450px',
-    marginLeft: '120px'
+    marginLeft: '220px'
   }
 
   const element_six = {
     
     marginTop: '50px',
-    marginLeft: '200px'
+    marginLeft: '60px'
+    
   }
 
   const element_seven = {
@@ -110,26 +129,27 @@ const inlineStyle1 = {
 
   const element_eight = {
     
-    marginTop: '0px',
-    marginLeft: '600px'
+    marginTop: '-180px',
+    marginLeft: '1200px'
   }
 
   const element_nine = {
     
-    marginTop: '-500px',
-    marginLeft: '1200px'
+    marginTop: '-400px',
+    marginLeft: '700px'
   }
 
   const element_ten = {
     
-    marginTop: '0px',
-    marginLeft: '620px'
+    marginTop: '-20px',
+    marginLeft: '1020px'
   }
 
   const element_eleven = {
     
-    marginTop: '200px',
-    marginLeft: '1220px'
+    marginTop: '180px',
+    marginLeft: '1100px'
+
   }
 
   const element_twelve = {
@@ -143,6 +163,15 @@ const inlineStyle1 = {
     marginTop: '100px',
     marginLeft: '-800px',
     fontSize :'20px',
+    
+  }
+
+  const text4 = {
+    
+    marginTop: '-200px',
+    marginLeft: '900px',
+    fontSize :'20px',
+    textAlign: 'justify'
     
   }
 
@@ -192,24 +221,29 @@ function Parallex() {
  <div>
 
  <Fragment>
-        <Nav style={{ backgroundColor: 'white', position: 'fixed', top: 0, height: 60, width: 580, marginLeft: 400}} className={colorChange}>
+        <Nav style={{ backgroundColor: 'white', position: 'fixed', top: 0, height: 60, width: 600, marginLeft: 400}} className={colorChange}>
            <NavContainer >
              
               
               <NavMenu>
-                <NavItem style={{ marginTop: 30}}>
-                  <div class="btn btn2" href="#page-top">A B O U T</div>
+                <NavItem style={{ marginTop: 65}}>
+                  <a class="btn btn2" href="#page-top">H O M E</a>
                 </NavItem>
-                <NavItem style={{ marginTop: 30}}>
-                <div class="btn btn2" href="#about">A B O U T</div>
+                <NavItem style={{ marginTop: 65}}>
+                <a class="btn btn2" href="#about">A B O U T</a>
                   
                 </NavItem>
-                <NavItem style={{ marginTop: 30}}>
-                <div class="btn btn2" href="#service">E V E N T S</div>
+                <NavItem style={{ marginTop: 65}}>
+                <a class="btn btn2" href="#skills">S K I L L S</a>
                   
                 </NavItem>
-                <NavItem style={{ marginTop: 30}}>
-                <div class="btn btn2" href="#contact">C O N T A C T</div>
+                <NavItem style={{ marginTop: 65}}>
+                <a class="btn btn2" href="#works">W O R K S</a>
+                 
+                </NavItem>
+
+                <NavItem style={{ marginTop: 65}}>
+                <a class="btn btn2" href="#contact">C O N T A C T</a>
                  
                 </NavItem>
                 
@@ -220,104 +254,137 @@ function Parallex() {
 
 </div> 
  
-<AnimationOnScroll style={element_two} animateIn="bounceInRight"  animateOut="bounceOutRight"  duration={2.0}>
-<div style={{ color: 'white' }}>R A G H U R A M</div>
+<AnimationOnScroll  animateIn="bounceInRight"  animateOut="bounceOutRight"  duration={2.0}>
+<h1 style={{ marginLeft: '50px',marginTop: '190px'}} >Hi, <br/> I am
+Raghuram</h1>
+
+<div className='r'  style={{marginTop: '-169px', marginLeft: '216px'}}>Raghuram</div>
 </AnimationOnScroll>
 
+<div style={{marginTop: '-109px',  marginLeft: '800px'}}>
+
+<TypeWriterEffect
+            textStyle={{ color: 'white', fontSize: 60, fontWeight: 'bold', fontFamily: 'Courier New'  }}
+            startDelay={100}
+            cursorColor="black"
+            text="< web  developer />"
+            typeSpeed={150}
+            
+          />
+    </div>
 <AnimationOnScroll style={element_three} animateIn="fadeIn"  animateOut="fadeOut"  duration={1.0}>
-<div style={{ color: 'white' }}> My Role is Full Stack Developer,
-I am Responsible for developing Front-end and Back-end of<br/>
-various Web-based An engineer or developer who works on both the front end (client-side) and the <br/>
-back end (server-side) of a website or application is called a full-stack developer. <br/>
-They may handle projects involving databases, APIs, or designing user-facing websites,  <br/>
-as well as interacting with clients during development.
-Projects, </div>
+
+<p style={{ fontSize :'18px',  marginLeft: '5px', color: 'white'}}>
+        I am a Full Stack Developer based in Kakinada, India. worked on more <br/>  10 web  projects  proficient in frontend, backend and database 
+         ,currently <br/> working as full stack web developer at starmark software<br/>
+         </p>
 </AnimationOnScroll>
+
 
 </Parallax>
                 
-           
- 
+<section id="about" class="about-section" >          
+<Parallax bgImage={ left } strength={-100}>
+        <div style={{ height: 734 }}>
+        <img  src={man_about} style={{marginTop: '0px', marginLeft: '-900px'}} />
+        <div style={{marginTop: '-500px', marginLeft: '500px', fontSize :'40px'}}>A B O U T</div>
+        <p style={{marginTop: '00px', marginLeft: '900px', fontSize :'20px', textAlign: 'justify'}}>
+        I am a Full Stack Developer located in Kakinada, India. I enjoy creating <br/> things that live on the internet. 
+         My interest in web development <br/> started back in 2016 when I decided to try recreating one of my favorite <br/> 
+         website using  HTML & CSS<br/>
+         <br/> 
+      Fast Forward to today, I have created more than 10 web projects as <br/>  a Student and as a Software Engineer,
+I graduated in 2021 and <br/> got a job as full stack web developer at starmark software, after my <br/> training 
+I was selected as lead for a project among 20 trainees, later <br/>  moved a team which works  on companies main 
+product, after one year <br/>  at starmark, i decided it time to next big step in life,
+And move <br/>  to a company where i can upskill and challenge myself
 
+        </p>
+        
+        </div>
+        </Parallax>
 
+</section>
     
 
 
-<section id="about" class="about-section">
+<section id="skills" class="about-section">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-            <Parallax bgImage={ image5 } strength={500}>
-        <div style={{ height: 734 }}>
-        <AnimationOnScroll style={element_four} animateIn="bounceInRight"  animateOut="fadeOut"  duration={2.0}>
+            
+            <Parallax bgImage={ right } strength={-100}   >
+        <div style={{ height: 734, }}>
+        <AnimationOnScroll style={element_four} animateIn="fadeIn"  animateOut="fadeOut"  duration={2.0}>
         
         
-        <img style={{ height: 500  }} src={manworking} alt="Logo" />
+        <img style={{ height: 550, marginLeft: -100, marginTop: 50  }} src={man_workings} alt="Logo" />
         
         </AnimationOnScroll>
 
         <AnimationOnScroll style={element_five} animateIn="bounceInLeft"  animateOut="fadeOut"  duration={2.0}>
         
         
-        <img style={{ height: 100  }} src={html} alt="Logo" />
+        <img style={{ height: 80, marginTop: -100  }} src={html} alt="Logo" />
         
         </AnimationOnScroll>
 
-        <AnimationOnScroll style={element_six} animateIn="fadeIn"  animateOut="fadeOut"  duration={2.0}>
+        <AnimationOnScroll style={element_six} animateIn="bounceInLeft"  animateOut="fadeOut"  duration={2.0}>
         
         
-        <img style={{ height: 120  }} src={css} alt="Logo" />
+        <img style={{ height: 100  }} src={css} alt="Logo" />
         
         </AnimationOnScroll>
 
         <AnimationOnScroll style={element_seven} animateIn="bounceInLeft"  animateOut="fadeOut"  duration={2.0}>
         
         
-        <img style={{ height: 100  }} src={js} alt="Logo" />
+        <img style={{ height: 80  }} src={js} alt="Logo" />
         
         </AnimationOnScroll>
 
-        <AnimationOnScroll style={element_eight} animateIn="bounceInLeft"  animateOut="fadeOut"  duration={2.0}>
+       
+
+        <AnimationOnScroll style={element_nine} animateIn="bounceInRight"  animateOut="fadeOut"  duration={2.0}>
         
         
-        <img style={{ height: 100  }} src={java} alt="Logo" />
+        <img style={{ height: 80  }} src={sql} alt="Logo" />
         
         </AnimationOnScroll>
 
-        <AnimationOnScroll style={element_nine} animateIn="bounceInLeft"  animateOut="fadeOut"  duration={2.0}>
+        <AnimationOnScroll style={element_ten} animateIn="bounceInRight"  animateOut="fadeOut"  duration={2.0}>
         
         
-        <img style={{ height: 100  }} src={sql} alt="Logo" />
-        
-        </AnimationOnScroll>
-
-        <AnimationOnScroll style={element_ten} animateIn="bounceInLeft"  animateOut="fadeOut"  duration={2.0}>
-        
-        
-        <img style={{ height: 100  }} src={c} alt="Logo" />
+        <img style={{ height: 80  }} src={react} alt="Logo" />
         
         </AnimationOnScroll>
 
-        <AnimationOnScroll style={element_eleven} animateIn="bounceInLeft"  animateOut="fadeOut"  duration={2.0}>
+        <AnimationOnScroll style={element_eleven} animateIn="bounceInRight"  animateOut="fadeOut"  duration={2.0}>
         
         
-        <img style={{ height: 100  }} src={dotnet} alt="Logo" />
+        <img style={{ height: 60  }} src={dotnet} alt="Logo" />
         
         </AnimationOnScroll>
    
 
-        <div style={subtitle}>S K I L L S</div>
+        <div style={{marginTop: '-400px', marginLeft: '-1200px', fontSize :'40px'}}>S K I L L S</div>
    
   
        
-   <div style={text2}> My Role is Full Stack Developer,
- I am Responsible for<br/> developing Front-end and Back-end of<br/>
-  various Web-based An engineer or developer <br/> who works on both the front end (client-side) and the <br/>
-   back end (server-side) of a website <br/> or application is called a full-stack developer. <br/>
-   They may handle projects  involving  databases,<br/> APIs, or designing user-facing websites,  <br/>
-   as well as interacting with clients during development.
-Projects, </div>
+   <p style={{ marginTop: '100px', marginLeft: '60px', fontSize :'20px', textAlign: 'justify'}}> Throughout my years of learning and working on web based  <br/> projects, 
+                        I am very strong at front end HTML, CSS, JS and REACT, <br/> I have created 
+                         more than 100+ User Interfaces. After I started <br/> working I improved my 
+                          backend and database knowledge also. <br/> Using .net and c# and I resolved  
+                          many bugs and created more than  <br/> 70+ Wep APIs. using SQL server   i wrote many Store produces and  <br/>Views 
+    </p>
     
+
+    <AnimationOnScroll style={element_eight} animateIn="bounceInRight"  animateOut="fadeOut"  duration={2.0}>
+        
+        
+        <img style={{ height: 80  }} src={java} alt="Logo" />
+        
+        </AnimationOnScroll>
 
         </div>
       </Parallax>
@@ -327,30 +394,54 @@ Projects, </div>
 </section>
 
 
-<section id="services" class="services-section">
+<section id="works" class="services-section">
     <div class="container"  >
         <div class="row">
             <div class="col-lg-12">
-            <Parallax bgImage={ image3 } strength={500} >
+            <Parallax bgImage={ left } strength={-100} >
         <div style={{ height: 700 }}>
-        <div style={inlineStyle1}>A B O U T </div>
+       
         
 
       <div style={{ marginLeft: 100 }}>
-        <div class="card" style={{ height: 100, width: 100 }} >
+        <div class="card" style={{ height: 100, width: 100, marginTop: 50, marginLeft: 50 }} >
             <div class="slide slide1">
                 <div class="content">
                     <div class="icon">
+                    <h2 style={{ fontSize :'40px', marginLeft: -30}}>
+                        Vital <p style={{ color :'orange',marginTop: -54, marginLeft: 140}}>dx</p>
+                    </h2>
                         <i class="fa fa-user-circle" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
             <div class="slide slide2">
                 <div class="content">
-                    <h3>
-                        Hello there!
-                    </h3>
-                    <p>Trust yourself and keep going.</p>
+                <br/>
+                
+                <div class="tags"  style={{ marginTop: -38}}>
+                        HTML
+                        <div style={{ marginTop: -18, marginLeft: 52, position: 'centre' }} class="tags" >
+                        CSS
+                    </div>
+                    <div style={{ marginTop: -20, marginLeft: 106, position: 'centre' }} class="tags" >
+                       JS
+                    </div>
+                    <div style={{ marginTop: -20, marginLeft: 160, position: 'centre' }} class="tags" >
+                        React
+                    </div>
+                    <br/>
+                    <br/>
+                    <div style={{ marginTop: -20, marginLeft: 0, position: 'centre' }} class="tags" >
+                        .NET
+                    </div>
+                    <div style={{ marginTop: -20, marginLeft: 52, position: 'centre' }} class="tags_sql" >
+                        SQLserver
+                    </div>
+                    </div>
+                    <br/>
+                    <br/>
+                    <p style={{ fontSize: 12 }}>This is Company’s Product, worked on developing new features and fixing bugs on this project</p>
                 </div>
             </div>
 
@@ -361,36 +452,70 @@ Projects, </div>
             <div class="slide slide1">
                 <div class="content">
                     <div class="icon">
+                    <img  style={{ height: 150, width: 250}} src={icon3} />
                         <i class="fa fa-user-circle" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
             <div class="slide slide2">
                 <div class="content">
-                    <h3>
-                        Hello there!
-                    </h3>
-                    <p>Trust yourself and keep going.</p>
+                <br/>
+                <div class="tags"  style={{ marginTop: -38}}>
+                        HTML
+                        <div style={{ marginTop: -18, marginLeft: 52, position: 'centre' }} class="tags" >
+                        CSS
+                    </div>
+                    <div style={{ marginTop: -20, marginLeft: 106, position: 'centre' }} class="tags" >
+                       JS
+                    </div>
+                    <div style={{ marginTop: -20, marginLeft: 160, position: 'centre' }} class="tags" >
+                        React
+                    </div>
+                    
+                    <br/>
+                    <br/>
+                    <div style={{ marginTop: -20, marginLeft: 0, position: 'centre' }} class="tags" >
+                        .NET
+                    </div>
+                    <div style={{ marginTop: -20, marginLeft: 52, position: 'centre' }} class="tags_sql" >
+                        SQLserver
+                    </div>
+                    </div>
+                    <br/>
+                    <br/>
+                    
+                    <p style={{ fontSize: 12 }}>This application helps to rise, view a ticket, which is used by support team to monitor tickets</p>
                 </div>
             </div>
 
             
         </div>
 
-        <div class="card" style={{ height: 100, width: 100, marginTop: 200 }} >
+        <div class="card" style={{ height: 100, width: 100, marginTop: 200, marginLeft: 50 }} >
             <div class="slide slide1">
                 <div class="content">
                     <div class="icon">
+                    <img  style={{ height: 150, width: 250}} src={icon2} />
                         <i class="fa fa-user-circle" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
             <div class="slide slide2" >
                 <div class="content">
-                    <h3>
-                        Hello there!
-                    </h3>
-                    <p>Trust yourself and keep going.</p>
+                <div class="tags"  style={{ marginTop: -38}} >
+                        HTML
+                        <div style={{ marginTop: -18, marginLeft: 52, position: 'centre' }} class="tags" >
+                        CSS
+                    </div>
+                    <div style={{ marginTop: -20, marginLeft: 106, position: 'centre' }} class="tags" >
+                       Django
+                    </div>
+                    <div style={{ marginTop: -20, marginLeft: 160, position: 'centre' }} class="tags" >
+                        SQLlite
+                    </div>
+                    </div>
+                    <br/>
+                    <p style={{ fontSize: 12 }}>It is a online library, I did it as part of my training, It has all the function similar to real library</p>
                 </div>
             </div>
 
@@ -401,24 +526,48 @@ Projects, </div>
             <div class="slide slide1">
               
                 <div class="content">
+                  
                     <div class="icon">
-                    
+                    <img  style={{ height: 150, width: 250}} src={icon} />
                         <i class="fa fa-user-circle" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
-            <div class="slide slide2"  >
+            <div class="slide slide2">
                 <div class="content">
-                    <h3>
-                        Hello there!
-                    </h3>
-                    <p>Trust yourself and keep going.</p>
+                <br/>
+                   <div class="tags"  style={{ marginTop: -38}}>
+                        HTML
+                        <div style={{ marginTop: -18, marginLeft: 52, position: 'centre' }} class="tags" >
+                        CSS
+                    </div>
+                    <div style={{ marginTop: -20, marginLeft: 106, position: 'centre' }} class="tags" >
+                       Django
+                    </div>
+                    <div style={{ marginTop: -20, marginLeft: 160, position: 'centre' }} class="tags" >
+                        SQLlite
+                    </div>
+                    </div>
+                    <br/>
+                    <p style={{ fontSize: 12 }}>It is a Student Management System which has a unique feature to predict the future grades of the student based on the past results using Machine Learning</p>
                 </div>
             </div>
 
             
         </div>
         </div>
+
+       
+
+        <div style={text4}> I worked on 10 web based project, 5 are for my college purpose,  <br/>
+                           and 2 projects are part of training, And the other 3 are live projects. <br/>
+                           I did when i am working at starmark software <br/>
+                           
+                           <p style={{ color : '#BDE1C4' , fontSize :'25px', fontWeight: 'bold'}}>Please hover on the project to get details</p>
+ 
+    </div>
+
+    <div style={{marginTop: '-300px', marginLeft: '500px', fontSize :'40px'}}>W O R K S</div>
 
         </div>
       </Parallax> 
@@ -428,113 +577,132 @@ Projects, </div>
 </section>
 
 
+
+
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
 <script src="https://cdn.jsdelivr.net/jquery.easing/1.3/jquery.easing.1.3.min.js"></script>
     
  
 
-        <Parallax bgImage={ image5 } strength={500}>
-        <div style={{ height: 734 }}/>
-        </Parallax>
+      
+
+<section id="contact" class="contact-section">
 
 
+        <Parallax bgImage={ right } strength={-100} > 
+        <div>
 
-        <Parallax bgImage={ image3 } strength={500}>
-        <div style={{ height: 734 }}/>
-        <div class="cards middle" style={{ marginLeft: 300, marginTop: -100 }} >
-      <div class="front">
-        <img  src={mail} />
-      </div>
-      <div class="back">
-        <div class="back-content middle">
-          <h2>WebDevTrick</h2>
-          <span>Designer &amp; Developers Blog</span>
-          <div class="sm">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            
+        <div style={{marginTop: '100px', marginLeft: '-700px', fontSize :'40px'}}> L E T S  &nbsp; G E T &nbsp; I N &nbsp; T O U C H  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  <br/><br/> &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp; <p style={{ marginTop: '0px',marginLeft: '1500px',fontSize :'30px', color:'white'}}>  I'm currently looking for new  <br/> challenge and oppotunity to grow <br/> in career, i  always belivee their is <br/>  not ending for learning  </p></div>
+        <div style={{marginTop: -400, marginLeft: '100px'}}>
+      
+
+        <img  src={man2} style={{ height: 700, width: 250}} />
+        </div>
+        <div style={{marginTop: '-200px', marginLeft: '1100px'}}>
+        <a class = "bn bn2" href={require("../Download_Resume/YerramsettiRaghuram.pdf")}  download="Y Raghuram Resume" > Download Resume  
+         </a> 
+        </div>
+        
+        <div style={{ height: 250 }}/>
+   
+       
+
+        <div class="cards middle" style={{ marginLeft: -600, marginTop: -150 }} >
+          
+          <div class="front">
+            <img  src={mail} />
+          </div>
+          <div class="back">
+            <div class="back-content middle">
+              <span><a href="mailto: yerramsettiraghuram@gmail.com" target="_blank"><img  style={{ height: 50, width: 50}} src={contact_links} /></a></span>
+              
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="cards middle" style={{ marginLeft: 600, marginTop: -100 }} >
+
+    
+    <div class="cards middle" style={{ marginLeft: -300, marginTop: -150 }} >
       <div class="front">
         <img  src={linkedin} />
       </div>
       <div class="back">
         <div class="back-content middle">
-          <h2>WebDevTrick</h2>
-          <span>Designer &amp; Developers Blog</span>
-          <div class="sm">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            
-          </div>
+          <span><a href="https://www.linkedin.com/in/yerramsettiraghuram/" target="_blank"><img  style={{ height: 50, width: 50}} src={contact_links} /></a></span>
+         
         </div>
       </div>
     </div>
 
-    <div class="cards middle" style={{ marginLeft: 300, marginTop: 200 }} >
+    <div class="cards middle" style={{ marginLeft: -600, marginTop: 100 }} >
+
       <div class="front">
         <img  src={instagram} />
       </div>
       <div class="back">
         <div class="back-content middle">
-          <h2>WebDevTrick</h2>
-          <span>Designer &amp; Developers Blog</span>
-          <div class="sm">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            
-          </div>
+          <span><a href="#"><img  style={{ height: 50, width: 50}} src={contact_links} /></a></span>
+         
         </div>
       </div>
     </div>
 
-    <div class="cards middle" style={{ marginLeft: 600, marginTop: 200 }} >
+    <div class="cards middle" style={{ marginLeft: -300, marginTop: 100 }} >
+
       <div class="front">
         <img  src={twitter} />
       </div>
       <div class="back">
         <div class="back-content middle">
-          <h2>WebDevTrick</h2>
-          <span>Designer &amp; Developers Blog</span>
-          <div class="sm">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            
-          </div>
+        <span><a href="#"><img  style={{ height: 50, width: 50}} src={contact_links} /></a></span>
+         
         </div>
-      </div>
-    </div>
 
+       
+      </div>
+
+    </div>
+    
+    
+    </div>  
      </Parallax>
 
+    
+     
+     </section>
+
+     <div>
+       
+       <div style={{ height: 100, backgroundColor:'white' }} >
+         
+       </div>
+     </div>
+
+      <Parallax style={{ height: 250, backgroundColor:'black' }}>
+       
+        <div  >
+          
+
+          <p style={{color:'white', marginTop: 100, marginLeft: 100, fontSize :'20px',  }}> Y E R R A M S E T T I &nbsp;   R A G H U R A M </p>
+
+          <p style={{color:'white', marginTop: -40, marginLeft: 900, fontSize :'20px',  }}> Contact </p>
+
+          <p style={{color:'white', marginTop: -50, marginLeft: 1200, fontSize :'20px',  }}>  Address</p>
+
+          <p style={{color:'grey', marginTop: 0, marginLeft: 900, fontSize :'15px',  }}> +917730939333 <br/> yerramsettiraghuram@gmail.com</p>
+
+          <p style={{color:'grey', marginTop: -55, marginLeft: 1200, fontSize :'15px',  }}> Kakianda <br/> Andhra Predesh, India</p>
 
 
-      <Parallax 
-        bgImage={ image4 }
-        strength={200}
-        renderLayer={precentage => (
-          <div 
-            style={{
-              position: 'absolute',
-              width: '100px',
-              height: '100px',
-              borderRadius: '50%',
-              background: `rgba(255, 123, 23, ${precentage * 1})`,
-              left: '50%',
-              top: '50%',
-              transform: `translate(-50%, -50%) scale(${precentage * 5})`,
-            }}
-          >
+          <p style={{color:'grey', marginTop: 40, marginLeft: 680, fontSize :'15px',  }}>Made in 2022</p>
+        
+
+
           </div>
-        )}
-      >
-        <div style={{ height: 500 }}>
-          <div style={inlineStyle}>Render prop</div>
-        </div>
       </Parallax>
-      <div style={{ height: '100vh' }}></div>
-    </div>
+     
+      </div>
     </body>
   );
 }

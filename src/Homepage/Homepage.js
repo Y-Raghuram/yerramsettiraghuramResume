@@ -14,6 +14,7 @@ import rrr from '../r.png'
 import ScrollAnimation from 'react-animate-on-scroll';
 import "./animate.css";
 import Fader from './Fader'
+import DownloadResume from '../DownloadResume/DownloadResume'
 
 
 export default function Homepage() {
@@ -55,7 +56,7 @@ document.addEventListener("wheel", function (e) {
         
           
         
-
+      <DownloadResume/>
          
         <div class="workspace">   
           <img   src={rrr} width="100" height="50" />
