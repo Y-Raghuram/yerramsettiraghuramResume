@@ -77,8 +77,14 @@ const inlineStyle1 = {
   const element_one = {
     height: 800,
     width: 1520,
-    
-    
+      
+  }
+
+  const element_onetwo = {
+    height: 800,
+    width: 1520,
+   marginLeft:100
+      
   }
 
 
@@ -284,8 +290,8 @@ Raghuram</h1>
 </Parallax>
                 
 <section id="about" class="about-section" >          
-<Parallax bgImage={ left } strength={-100}>
-        <div style={{ height: 734 }}>
+<Parallax bgImage={ left } style={element_one}  strength={-100}>
+       
         <img  src={man_about} style={{marginTop: '0px', marginLeft: '-900px'}} />
         <div style={{marginTop: '-500px', marginLeft: '500px', fontSize :'40px'}}>A B O U T</div>
         <p style={{marginTop: '00px', marginLeft: '900px', fontSize :'20px', textAlign: 'justify'}}>
@@ -301,7 +307,7 @@ And move <br/>  to a company where i can upskill and challenge myself
 
         </p>
         
-        </div>
+        
         </Parallax>
 
 </section>
@@ -313,12 +319,12 @@ And move <br/>  to a company where i can upskill and challenge myself
         <div class="row">
             <div class="col-lg-12">
             
-            <Parallax bgImage={ right } strength={-100}   >
-        <div style={{ height: 734, }}>
+            <Parallax bgImage={ right } style={element_onetwo} strength={-100}   >
+        
         <AnimationOnScroll style={element_four} animateIn="fadeIn"  animateOut="fadeOut"  duration={2.0}>
         
         
-        <img style={{ height: 550, marginLeft: -100, marginTop: 50  }} src={man_workings} alt="Logo" />
+        <img style={{ height: 550, marginLeft: -200, marginTop: 0  }} src={man_workings} alt="Logo" />
         
         </AnimationOnScroll>
 
@@ -362,7 +368,7 @@ And move <br/>  to a company where i can upskill and challenge myself
         <AnimationOnScroll style={element_eleven} animateIn="bounceInRight"  animateOut="fadeOut"  duration={2.0}>
         
         
-        <img style={{ height: 60  }} src={dotnet} alt="Logo" />
+        <img style={{ height: 60,marginLeft:-100   }} src={dotnet} alt="Logo" />
         
         </AnimationOnScroll>
    
@@ -382,11 +388,11 @@ And move <br/>  to a company where i can upskill and challenge myself
     <AnimationOnScroll style={element_eight} animateIn="bounceInRight"  animateOut="fadeOut"  duration={2.0}>
         
         
-        <img style={{ height: 80  }} src={java} alt="Logo" />
+        <img style={{ height: 80, marginLeft:-100  }} src={java} alt="Logo" />
         
         </AnimationOnScroll>
 
-        </div>
+       
       </Parallax>
             </div>
         </div>
@@ -394,16 +400,16 @@ And move <br/>  to a company where i can upskill and challenge myself
 </section>
 
 
-<section id="works" class="services-section">
+<section id="works" class="about-section">
     <div class="container"  >
         <div class="row">
             <div class="col-lg-12">
-            <Parallax bgImage={ left } strength={-100} >
-        <div style={{ height: 700 }}>
+            <Parallax bgImage={ left } style={element_one} strength={-100} >
+        
        
         
 
-      <div style={{ marginLeft: 100 }}>
+      <div style={{ marginLeft: 150 }}>
         <div class="card" style={{ height: 100, width: 100, marginTop: 50, marginLeft: 50 }} >
             <div class="slide slide1">
                 <div class="content">
@@ -569,7 +575,7 @@ And move <br/>  to a company where i can upskill and challenge myself
 
     <div style={{marginTop: '-300px', marginLeft: '500px', fontSize :'40px'}}>W O R K S</div>
 
-        </div>
+        
       </Parallax> 
             </div>
         </div>
@@ -590,25 +596,25 @@ And move <br/>  to a company where i can upskill and challenge myself
 <section id="contact" class="contact-section">
 
 
-        <Parallax bgImage={ right } strength={-100} > 
+        <Parallax bgImage={ right } style={element_onetwo} strength={-100} > 
         <div>
 
-        <div style={{marginTop: '100px', marginLeft: '-700px', fontSize :'40px'}}> L E T S  &nbsp; G E T &nbsp; I N &nbsp; T O U C H  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  <br/><br/> &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp; <p style={{ marginTop: '0px',marginLeft: '1500px',fontSize :'30px', color:'white'}}>  I'm currently looking for new  <br/> challenge and oppotunity to grow <br/> in career, i  always belivee their is <br/>  not ending for learning  </p></div>
-        <div style={{marginTop: -400, marginLeft: '100px'}}>
+        <div style={{marginTop: '100px', marginLeft: '-750px', fontSize :'40px'}}> L E T S  &nbsp; G E T &nbsp; I N &nbsp; T O U C H  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  <br/><br/> &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp; <p style={{ marginTop: '-100px',marginLeft: '1500px',fontSize :'30px', color:'white'}}>  I'm currently looking for new  <br/> challenge and oppotunity to grow <br/> in career, i  always belivee their is <br/>  not ending for learning  </p></div>
+        <div style={{marginTop: -300, marginLeft: '100px'}}>
       
 
-        <img  src={man2} style={{ height: 700, width: 250}} />
+        <img  src={man2} style={{ height: 600, width: 250}} />
         </div>
-        <div style={{marginTop: '-200px', marginLeft: '1100px'}}>
+        <div style={{marginTop: '-200px', marginLeft: '1000px'}}>
         <a class = "bn bn2" href={require("../Download_Resume/YerramsettiRaghuram.pdf")}  download="Y Raghuram Resume" > Download Resume  
          </a> 
         </div>
         
-        <div style={{ height: 250 }}/>
-   
+       
+        
        
 
-        <div class="cards middle" style={{ marginLeft: -600, marginTop: -150 }} >
+        <div class="cards middle" style={{ marginLeft: -600, marginTop: 0 }} >
           
           <div class="front">
             <img  src={mail} />
@@ -623,7 +629,7 @@ And move <br/>  to a company where i can upskill and challenge myself
 
 
     
-    <div class="cards middle" style={{ marginLeft: -300, marginTop: -150 }} >
+    <div class="cards middle" style={{ marginLeft: -300, marginTop: 0 }} >
       <div class="front">
         <img  src={linkedin} />
       </div>
@@ -635,7 +641,7 @@ And move <br/>  to a company where i can upskill and challenge myself
       </div>
     </div>
 
-    <div class="cards middle" style={{ marginLeft: -600, marginTop: 100 }} >
+    <div class="cards middle" style={{ marginLeft: -600, marginTop: 250 }} >
 
       <div class="front">
         <img  src={instagram} />
@@ -648,7 +654,7 @@ And move <br/>  to a company where i can upskill and challenge myself
       </div>
     </div>
 
-    <div class="cards middle" style={{ marginLeft: -300, marginTop: 100 }} >
+    <div class="cards middle" style={{ marginLeft: -300, marginTop: 250 }} >
 
       <div class="front">
         <img  src={twitter} />
