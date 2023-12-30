@@ -76,14 +76,15 @@ const inlineStyle1 = {
 
   const element_one = {
     height: 800,
-    width: 1520,
+    width: '100%',
       
   }
 
   const element_onetwo = {
     height: 800,
-    width: 1520,
-   marginLeft:100
+    width: '100%',
+    
+   
       
   }
 
@@ -227,7 +228,7 @@ function Parallex() {
  <div>
 
  <Fragment>
-        <Nav style={{ backgroundColor: 'white', position: 'fixed', top: 0, height: 60, width: 600, marginLeft: 400}} className={colorChange}>
+        <Nav style={{ backgroundColor: 'white', position: 'fixed', top: 0, height: 60, width: 600, marginLeft: 400, borderRadius: 35}} className={colorChange}>
            <NavContainer >
              
               
@@ -296,14 +297,14 @@ Raghuram</h1>
         <div style={{marginTop: '-500px', marginLeft: '500px', fontSize :'40px'}}>A B O U T</div>
         <p style={{marginTop: '00px', marginLeft: '900px', fontSize :'20px', textAlign: 'justify'}}>
         I am a Full Stack Developer located in Kakinada, India. I enjoy creating <br/> things that live on the internet. 
-         My interest in web development <br/> started back in 2016 when I decided to try recreating one of my favorite <br/> 
+         My interest in web development <br/> started back in 2016 when I decided to try recreating one of my <br/> favorite  
          website using  HTML & CSS<br/>
          <br/> 
       Fast Forward to today, I have created more than 10 web projects as <br/>  a Student and as a Software Engineer,
 I graduated in 2021 and <br/> got a job as full stack web developer at starmark software, after my <br/> training 
 I was selected as lead for a project among 20 trainees, later <br/>  moved a team which works  on companies main 
-product, after one year <br/>  at starmark, i decided it time to next big step in life,
-And move <br/>  to a company where i can upskill and challenge myself
+product, after one  <br/> year  at starmark,  <br/>  <br/> i decided it time to next big  step in life,
+And move   to a company <br/> where i can upskill and challenge myself
 
         </p>
         
@@ -599,7 +600,7 @@ And move <br/>  to a company where i can upskill and challenge myself
         <Parallax bgImage={ right } style={element_onetwo} strength={-100} > 
         <div>
 
-        <div style={{marginTop: '100px', marginLeft: '-750px', fontSize :'40px'}}> L E T S  &nbsp; G E T &nbsp; I N &nbsp; T O U C H  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  <br/><br/> &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp; <p style={{ marginTop: '-100px',marginLeft: '1500px',fontSize :'30px', color:'white'}}>  I'm currently looking for new  <br/> challenge and oppotunity to grow <br/> in career, i  always belivee their is <br/>  not ending for learning  </p></div>
+        <div style={{marginTop: '100px', marginLeft: '-650px', fontSize :'40px'}}> L E T S  &nbsp; G E T &nbsp; I N &nbsp; T O U C H  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  <br/><br/> &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp; <p style={{ marginTop: '-100px',marginLeft: '1400px',fontSize :'30px', color:'white'}}>  I'm currently looking for new  <br/> challenge and oppotunity to grow <br/> in career, i  always belivee their is <br/>  not ending for learning  </p></div>
         <div style={{marginTop: -300, marginLeft: '100px'}}>
       
 
@@ -614,7 +615,7 @@ And move <br/>  to a company where i can upskill and challenge myself
         
        
 
-        <div class="cards middle" style={{ marginLeft: -600, marginTop: 0 }} >
+        <div class="cards middle" style={{ marginLeft: -550, marginTop: 0 }} >
           
           <div class="front">
             <img  src={mail} />
@@ -629,7 +630,7 @@ And move <br/>  to a company where i can upskill and challenge myself
 
 
     
-    <div class="cards middle" style={{ marginLeft: -300, marginTop: 0 }} >
+    <div class="cards middle" style={{ marginLeft: -250, marginTop: 0 }} >
       <div class="front">
         <img  src={linkedin} />
       </div>
@@ -641,7 +642,7 @@ And move <br/>  to a company where i can upskill and challenge myself
       </div>
     </div>
 
-    <div class="cards middle" style={{ marginLeft: -600, marginTop: 250 }} >
+    <div class="cards middle" style={{ marginLeft: -550, marginTop: 250 }} >
 
       <div class="front">
         <img  src={instagram} />
@@ -654,7 +655,7 @@ And move <br/>  to a company where i can upskill and challenge myself
       </div>
     </div>
 
-    <div class="cards middle" style={{ marginLeft: -300, marginTop: 250 }} >
+    <div class="cards middle" style={{ marginLeft: -250, marginTop: 250 }} >
 
       <div class="front">
         <img  src={twitter} />
